@@ -8,7 +8,7 @@ Projeto em desenvolvimento!
 
 
 <div style="display: inline_block" >
-
+fotos salvas em: templates\static\readme
 <img align="center" width="300" src="#">
 
 
@@ -22,16 +22,23 @@ Projeto em desenvolvimento!
 
 # :hammer: Funcionalidades do projeto
 
-
-- `Confirmação de email no cadatro`: Ao realizar o cadastro, é enviado para o email cadastrado um link de ativação da conta
+- `Cadastro e Login de usuários`: DF1
+&nbsp;
+- `Confirmação de email no cadatro`: Ativação de conta por meio de um link enviado para o email cadastrado com um token único criado para cada usuário com o sha256.
+&nbsp;
+- `Listagem e cadastro de pacientes`: DF2
 &nbsp;
 
+- `Perfil do cliente`: Histórico de evolução das medidas do paciente com gráficos relacionados
+&nbsp;
 
 
 # ✔️ Técnicas e tecnologias utilizadas
 
+- ``Bootstrap``
+- ``Geração de token com sha256``
+- ``Expressões regulares``
 - ``Framework Django``
-- ``Expressões regulares para validação da entrada de dados``
 - ``Arquitetura MVT``
 - ``Paradigma de orientação a objetos``
 
