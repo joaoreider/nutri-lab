@@ -23,7 +23,7 @@ Projeto em desenvolvimento!
 # :hammer: Funcionalidades do projeto
 
 
-- `F1`: Descrição funcionalidade 1
+- `Confirmação de email no cadatro`: Ao realizar o cadastro, é enviado para o email cadastrado um link de ativação da conta
 &nbsp;
 
 

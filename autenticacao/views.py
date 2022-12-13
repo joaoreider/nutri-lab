@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .utils import password_is_valid, null_fields_is_valid
 from django.shortcuts import redirect
+from django.contrib.auth.models import User
+from django.contrib import messages
+from django.contrib.messages import constants
+
 
 def cadastro(request):
 
@@ -20,11 +24,29 @@ def cadastro(request):
             print('invalid null fields')
             return redirect('/auth/cadastro')
 
-        return HttpResponse('teste')
+        try:
+
+            usuario = User.objects.filter(username=username).all()
+           
+            if len(usuario)>0:
+                messages.add_message(request, constants.ERROR, 'Usuário já cadastrado no sistema.')
+                print('usuario já cadastrado')
+                return redirect('/auth/cadastro')
+            
+
+            user = User.objects.create_user(username=username,
+                                            email=email,
+                                            password=senha,
+                                            is_active=False)
+            user.save()
+            messages.add_message(request, constants.SUCCESS, 'Usuário cadastrado com sucesso')
+            return redirect('/auth/logar')
+        except:
+            messages.add_message(request, constants.ERROR, 'Erro interno do sistema')
+            return redirect('/auth/cadastro')        
 
 
 
-    
 
 def logar(request):
     return HttpResponse('Login')
