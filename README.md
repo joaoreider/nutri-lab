@@ -22,15 +22,16 @@ fotos salvas em: templates\static\readme
 
 # :hammer: Funcionalidades do projeto
 
-- `Cadastro e Login de usuários`: DF1
+- `Cadastro e Login de pacientes`: DF1
 &nbsp;
 - `Confirmação de email no cadatro`: Ativação de conta por meio de um link enviado para o email cadastrado com um token único criado para cada usuário com o sha256.
 &nbsp;
 - `Listagem e cadastro de pacientes`: DF2
 &nbsp;
 
-- `Perfil do cliente`: Histórico de evolução das medidas do paciente com gráficos relacionados
+- `Perfil do paciente`: Plano alimentar personalizado e histórico de evolução das medidas do paciente com gráficos relacionados
 &nbsp;
+
 
 
 # ✔️ Técnicas e tecnologias utilizadas
