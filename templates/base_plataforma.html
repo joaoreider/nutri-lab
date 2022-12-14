@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load static  %}
 
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'plataforma/css/css.css' %}">    
+{% endblock%}
+
 {% block 'body' %}
     <div class="container-fluid">
         <div class="row">
@@ -15,7 +19,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="link-lateral">
+                <a href="{% url 'dados_paciente_listar' %}" class="link-lateral">
                     <div class="card-lateral">
                         <img src="{% static 'plataforma/img/dados_paciente.png' %}">
                         <br>
