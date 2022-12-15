@@ -11,13 +11,16 @@
   </head>
   <body>
     {% if user.is_authenticated %}
-      <nav style="background-color: #27DB8F;" class="navbar navbar-expand-lg navbar-dark">
-        <a style="font-weight: bold" class="navbar-brand" href="#">NUTRI LAB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> 
-      </nav>
-    {% endif %}
+    <nav style="background-color: #27DB8F;" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a style="font-weight: bold; color: white;" class="navbar-brand" href="{% url 'pacientes' %}">NUTRI LAB</a>
+
+        <div><a style="color: white; font-size: 20px; text-align: end" class="dropdown-item" href="{% url 'sair' %}">SAIR</a> </div>
+      </div>
+    </nav>
+      
+    {% endif %} 
+
 
     {% block 'body' %}{% endblock  %}
 
