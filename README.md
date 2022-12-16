@@ -65,7 +65,7 @@ python manage.py runserver
 ```
 Esse comando funciona no Windows.
 
-Após isso você pode copiar o IP fornecido e colar no seu navegador adicionando a url o nome auth/logar (ex: http://127.0.0.1:8000/auth/logar/) realizar o cadastro de usuário e logar na sua conta para acessar todas as funcionalidades!
+Após isso você pode copiar o IP fornecido e colar no seu navegador adicionando à url o nome auth/logar (ex: http://127.0.0.1:8000/auth/logar/) realizar o cadastro de usuário e logar na sua conta para acessar todas as funcionalidades!
 
 
 :point_down: Acesse meu perfil no Linkedin 
